@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # PostgreSQL 연결 정보
-DATABASE_URL = "postgresql://postgres:94Rlawlsgur!@localhost/fastapi_db"
+DATABASE_URL = "postgresql://postgres:@localhost/fastapi_db"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
